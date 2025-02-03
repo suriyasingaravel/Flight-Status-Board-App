@@ -13,7 +13,8 @@ interface Flight {
   status: string;
 }
 
-const options = {
+// Explicitly define the type for date formatting options
+const options: Intl.DateTimeFormatOptions = {
   weekday: "long",
   year: "numeric",
   month: "long",
@@ -75,7 +76,6 @@ export const FlightDetails: React.FC = () => {
               backgroundColor: "#2d3748",
             }}
           >
-            {" "}
             {flight.flightNumber}
           </span>
         </p>
