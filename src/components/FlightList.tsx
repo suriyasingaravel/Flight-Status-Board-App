@@ -38,7 +38,7 @@ export const FlightList: React.FC = () => {
 
   useEffect(() => {
     fetchFlights();
-    const interval = setInterval(fetchFlights, 10000);
+    const interval = setInterval(fetchFlights, 15000);
     return () => clearInterval(interval);
   }, []);
 
