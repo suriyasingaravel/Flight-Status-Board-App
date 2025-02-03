@@ -4,6 +4,9 @@
 
 This project is a **React-based application** built using **TypeScript** that mimics a real-time flight status board. The application fetches flight details from an external API, updates the data at regular intervals, and allows users to view detailed flight information.This app is responsive for all screen sizes. The application is fully tested and deployed using **Netlify**.
 
+## Website link
+https://flight-status-board-app.netlify.app/
+
 ## Features
 
 ### 1. Flight Table
