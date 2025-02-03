@@ -141,6 +141,7 @@ To deploy:
 - Add search and filter functionality for flights.
 - Implement real-time WebSocket updates instead of polling.
 - Enhance UI with animations and better responsiveness.
+- Toggle option between dark and light mode.
 
 ---
 
