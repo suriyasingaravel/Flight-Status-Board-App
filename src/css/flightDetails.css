@@ -73,10 +73,14 @@
 
 .loading-message {
   color: #a0aec0;
-  font-size: 1.2rem;
+  font-family: "Courier New", Courier, monospace;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
 }

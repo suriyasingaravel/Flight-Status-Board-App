@@ -8,6 +8,12 @@
   flex-direction: column;
   align-items: center;
 }
+.loading-container {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+}
 
 .board-title {
   font-size: 2rem;
