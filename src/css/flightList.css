@@ -1,0 +1,168 @@
+.departure-board {
+  background-color: #1a202c;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.current-date-time {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #63b3ed;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.error-message {
+  color: #e53e3e;
+  margin-bottom: 20px;
+}
+
+.board-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1360px;
+  overflow-x: auto;
+}
+
+.flight-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.flight-table th,
+.flight-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #2d3748;
+}
+
+.flight-table th {
+  background-color: #2d3748;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.flight-table td {
+  word-wrap: break-word;
+}
+
+.status {
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.status.on-time {
+  background-color: #48bb78;
+  color: white;
+}
+
+/* .status.boarding {
+    background-color: #ed4f4f;
+    color: white;
+  } */
+
+.status.delayed {
+  background-color: #ecc94b;
+  color: #1a202c;
+}
+
+.status.departed {
+  background-color: #ed4f4f;
+  color: white;
+}
+.status.cancelled {
+  background-color: #f56565;
+  color: white;
+}
+
+.btn {
+  width: 180px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  background-color: #3182ce;
+  color: #f5f5f5;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px 0px #3182ce;
+}
+
+.btn .icon {
+  position: absolute;
+  height: 40px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.btn .text {
+  transform: translateX(55px);
+}
+
+.btn:hover .icon {
+  width: 175px;
+}
+
+.btn:hover .text {
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active .icon {
+  transform: scale(0.85);
+}
+
+.details-button {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.details-button:hover {
+  background-color: #2b6cb0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .flight-table th,
+  .flight-table td {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+  .details-button {
+    font-size: 0.8rem;
+    padding: 4px 6px;
+  }
+}
