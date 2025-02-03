@@ -13,7 +13,6 @@ interface Flight {
   status: string;
 }
 
-// Explicitly define the type for date formatting options
 const options: Intl.DateTimeFormatOptions = {
   weekday: "long",
   year: "numeric",
@@ -42,7 +41,7 @@ export const FlightDetails: React.FC = () => {
           setError(null);
         } catch (err) {
           setError("The requested flight details are unavailable.");
-          console.error("Error fetching flight details:", err);
+          // console.error("Error fetching flight details:", err);
         }
       }
     };
@@ -50,7 +49,7 @@ export const FlightDetails: React.FC = () => {
     fetchFlightDetails();
 
     const interval = setInterval(fetchFlightDetails, 10000);
-    return () => clearInterval(interval); // Clear interval on component unmount
+    return () => clearInterval(interval);
   }, [id]);
 
   if (error) return <p className="error-message">{error}</p>;
