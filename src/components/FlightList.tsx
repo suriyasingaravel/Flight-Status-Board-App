@@ -15,7 +15,7 @@ interface Flight {
 
 const API_URL = "https://flight-status-mock.core.travelopia.cloud/flights";
 
-export const FlightList: React.FC = () => {
+export const FlightList = () => {
   const [flights, setFlights] = useState<Flight[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
